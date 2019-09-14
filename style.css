@@ -1,8 +1,74 @@
+* {
+    box-sizing: border-box;
+}
 .container {
-    background-color: #dd44dd;
+    background-color: #d4d4d4;
     position: absolute;
     left: 10px;
     right: 10px;
     top: 10px;
     bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.header,
+.filter,
+.tasks,
+.task {
+    display: flex;
+}
+
+.header {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input {
+    height: 40px;
+    flex: 1;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: inherit;
+}
+
+input:focus, 
+button:focus {
+    outline: none;
+}
+
+button {
+    min-width: 100px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #6279b8;
+}
+
+.tasks {
+    background-color: #fff;
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.task {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 16px;
+    align-items: center;
+}
+
+.task__content {
+    flex: 1;
+}
+
+.task__action {
+    width: 100px;
+    text-align: right;
+    padding: 10px;
 }
