@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "git@github.com:Bam92/electron-tracker-app.git",
   "keywords": [
     "Electron",
     "quick",
@@ -15,8 +15,9 @@
     "demo"
   ],
   "author": "GitHub",
-  "license": "CC0-1.0",
+  "license": "MIT",
   "devDependencies": {
-    "electron": "^6.0.9"
+    "electron": "^6.0.9",
+    "electron-reload": "^1.5.0"
   }
 }
